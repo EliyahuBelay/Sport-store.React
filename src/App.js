@@ -1,13 +1,9 @@
-
 import { useState } from 'react';
 import './App.css';
 import { Get } from './Services/Shoose-service.service';
-import { ShoesContex } from './MyContex/ShoesContex';
-import Shoes from './Components/Shoes/Shoes.component';
 import PantsContex from './MyContex/PantsContex';
 import { Pants } from './Components/Pants/Pants.component';
-// import EquipmentContex from './MyContex/EquipmentContex';
-// import Equipment from './Components/Equipment/Equipment.component';
+import Shoes from './Components/Shoes/Shoes.component';
 
 
 function App() {
@@ -26,9 +22,7 @@ function App() {
           {shoesApi.map(item => <li>{item.ShoeBrand}</li>)}
         </ul>
         <hr />
-        <ShoesContex>
-          <Shoes/>
-        </ShoesContex>
+       <Shoes/>
         <hr />
         <PantsContex>
           <Pants/>

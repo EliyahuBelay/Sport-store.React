@@ -1,12 +1,11 @@
-import { useContext } from 'react';
-import {shoesContex} from '../../MyContex/ShoesContex';
+import ShoesCards from "../ShoesCards/ShoesCarsd.component";
+import { ShoesContex } from "../../MyContex/ShoesContex";
 
-function Shoes() {
-    const {shoes,setShoes} = useContext(shoesContex);
-    return (
-        <ul>
-            {shoes.map((item) => <li>{item.ShoeType}</li>)}
-        </ul>
+function Shoes(){
+    return(
+        <ShoesContex>
+            <ShoesCards></ShoesCards>
+        </ShoesContex>
     )
 }
 export default Shoes;
