@@ -14,6 +14,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  min-width: 100vw;
 }
 
 hr {
@@ -26,5 +27,9 @@ hr {
   display: flex;
   flex-wrap: wrap;
   width: 100vw;
-  
+  justify-content: space-evenly;
+}
+
+.oneCard{
+  width:30%;
 }
